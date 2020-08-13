@@ -20,6 +20,7 @@ public class UserController {
     public String findall(Model model){
         List<User> users = userService.findall();
         model.addAttribute("users",users);
+        System.out.println(users);
         return "showAll";
     }
 
