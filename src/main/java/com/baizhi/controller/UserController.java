@@ -21,6 +21,7 @@ public class UserController {
         List<User> users = userService.findall();
         model.addAttribute("users",users);
         System.out.println(users);
+        System.out.println("1");
         return "showAll";
     }
 
